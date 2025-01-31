@@ -3,6 +3,10 @@ using Bookify.Domain.Shared;
 namespace Bookify.Domain.Apartments;
 public sealed class Apartment : Entity
 {
+    private Apartment()
+    {
+        
+    }
 
 
     public Apartment(Guid id, Name name, Description description, Address address, Money price, Money cleaningFee, List<Amenity> amenities) : base(id)
